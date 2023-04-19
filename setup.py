@@ -142,6 +142,8 @@ if __name__ == "__main__":
 
 def start_app():
     os.system("python app.py")
+    os.remove('createapp.py')
+    os.remove('setup.py')
 
 
 def create_flask_app():
@@ -156,5 +158,3 @@ def create_flask_app():
     create_readme()
     create_app()
     start_app()
-
-create_flask_app()
